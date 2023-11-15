@@ -16,5 +16,9 @@ public class WebDriverSetup {
         return driver;
     }
 
+    public void setImplicitWait(WebDriver driver){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(PropertyConfigs.SELENIUM_IMPLICIT_WAIT));
+    }
+
 
 }

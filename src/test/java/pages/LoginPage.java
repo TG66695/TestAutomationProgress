@@ -1,37 +1,25 @@
 package pages;
 
 import constants.PropertyConfigs;
-import org.junit.Before;
+import org.checkerframework.checker.units.qual.C;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.FindBy;
-
-import java.time.Duration;
-
 
 public class LoginPage {
-    @FindBy(id = "user-name")
-    public static WebElement usernameField;
+    WebDriver driver;
 
-    @FindBy(id = "password")
-    public static WebElement passwordField;
-
-    @FindBy(id = "login-button")
-    public static WebElement loginBtn;
-
-    @FindBy(id = "login_credentials")
-    public static WebElement userCredentials;
-
-    @FindBy(xpath = "//div[@class = 'login_password']")
-    public static WebElement userPass;
-
-
-    public static void login(String username, String password){
-        usernameField.sendKeys(username);
-        passwordField.sendKeys(password);
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
     }
-    public static void clickLoginBtn(){
-        loginBtn.click();
+
+    public void setUsername(String username){
+        driver.findElement(By.id("user-name")).sendKeys(username);
+    }
+    public void setPassword(String password) {
+        driver.findElement(By.id("password")).sendKeys(password);
+    }
+    public void clickLoginBtn() {
+        driver.findElement(By.id("login-button")).click();
     }
 }

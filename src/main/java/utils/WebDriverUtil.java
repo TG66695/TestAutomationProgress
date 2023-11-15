@@ -1,6 +1,5 @@
 package utils;
 
-import constants.GlobalParams;
 import constants.PropertyConfigs;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,10 +18,15 @@ public class WebDriverUtil {
         drivers.get().quit();
         drivers.set(null);
     }
-    public static void closeDriverSessionIfExists(String scope){
-        if(drivers.get() !=null){
+    public static void closeDriverSessionIfExists() {
+        if (drivers.get() != null) {
             closeDriverSession();
         }
     }
+    public static WebElement getElement(By locator) {
+        AwaitUtils.waitUntil(() -> getDriver().findElements(locator).size() > 0, PropertyConfigs.SELENIUM_IMPLICIT_WAIT);
+        return getDriver().findElement(locator);
+    }
+
 
 }

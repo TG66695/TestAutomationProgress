@@ -11,19 +11,18 @@ import utils.WebDriverUtil;
 import java.time.Duration;
 
 public class Hook {
-    WebDriver driver;
-        @Before
-        public void driverSetup () {
-//            WebDriverUtil.setDriver(WebDriverSetup.setupWebDriver());
-            WebDriver driver = new ChromeDriver();
-            driver.navigate().to(PropertyConfigs.APP_URL);
-            driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(PropertyConfigs.SELENIUM_IMPLICIT_WAIT));
+    @Before
+    public void driverSetup () {
+//        WebDriverUtil.setDriver(WebDriverSetup.setupWebDriver());
+        WebDriver driver = new ChromeDriver();
+        driver.navigate().to(PropertyConfigs.APP_URL);
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(PropertyConfigs.SELENIUM_IMPLICIT_WAIT));
         }
 
         @After
         public void closeDriver () {
-            driver.quit();
+//            driver.quit();
         }
 
     }
