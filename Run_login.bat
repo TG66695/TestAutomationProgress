@@ -1,2 +1,2 @@
-call mvn clean verify -Dcucumber.filter.tags="@login"
+call mvn clean verify -Dcucumber.options="--tags @login"
 pause

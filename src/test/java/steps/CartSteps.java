@@ -10,7 +10,7 @@ import utils.AwaitUtils;
 public class CartSteps {
     @Then("user clicks on cart button")
     public void userClicksOnCartButton() {
-        AwaitUtils.waitForConditionWithFluentWait(ProductsPage.cartBtn::isDisplayed, 5);
+        AwaitUtils.waitForConditionWithFluentWait(ProductsPage.cartBtn::isDisplayed, 2);
         ProductsPage.cartBtn.click();
     }
 

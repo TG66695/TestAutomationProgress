@@ -19,7 +19,7 @@ public class ProductPageSteps {
     public void productIsInTheCart() {
         int badgeValue = ProductsPage.cartBadge.getIntValue();
         Assert.assertEquals(1, badgeValue);
-        AwaitUtils.waitForSeconds(3);
+        AwaitUtils.waitForSeconds(1);
     }
 
     @And("Remove button appears")
