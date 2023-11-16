@@ -1,32 +1,43 @@
 package utils;
 
-import org.awaitility.Awaitility;
-import org.openqa.selenium.WebDriverException;
-import org.openqa.selenium.WebElement;
-import org.awaitility.core.ConditionFactory;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 
 import java.time.Duration;
 import java.util.concurrent.Callable;
 
 public class AwaitUtils {
-    public static ConditionFactory await(String msg) {
-        return Awaitility.await(msg);
-    }
-    public static ConditionFactory awaitWithInterval(String msg, int timeout, int interval) {
-        return await(msg)
-                .atMost(Duration.ofSeconds(timeout))
-                .pollInSameThread()
-                .pollInterval(Duration.ofMillis(interval))
-                .pollDelay(Duration.ZERO)
-                .ignoreExceptionsInstanceOf(WebDriverException.class);
+
+    public static void waitForSeconds(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000L);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
-    public static ConditionFactory await(String msg, int timeout) {
-        return awaitWithInterval(msg, timeout, 500);
-    }
+    public static boolean waitForConditionWithFluentWait(Callable<Boolean> condition, int timeout) {
+        try {
+            Wait<WebDriver> wait = new FluentWait<>(WebDriverUtil.getDriver())
+                    .withTimeout(Duration.ofSeconds(timeout))
+                    .pollingEvery(Duration.ofSeconds(2))
+                    .ignoring(NoSuchElementException.class);
 
-    public static void waitUntil(Callable<Boolean> condition, int timeout) {
-        await(null, timeout).until(condition);
+            wait.until(driver -> {
+                try {
+                    return condition.call();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    return false;
+                }
+            });
+            return true;
+        } catch (TimeoutException e) {
+            return false;
+        }
     }
-
 }
+

@@ -1,25 +1,23 @@
 package pages;
 
-import constants.PropertyConfigs;
-import org.checkerframework.checker.units.qual.C;
+import elements.Button;
+import elements.TextBox;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LoginPage {
-    WebDriver driver;
+    public static final TextBox userField = new TextBox(By.id("user-name"));
+    public static final TextBox passwordField = new TextBox(By.id("password"));
+    public static final Button loginBtn = new Button(By.id("login-button"));
+//    public static String userLoginsList = "//div[@class = 'login_credentials']/text()[%s]";
 
-    public LoginPage(WebDriver driver) {
-        this.driver = driver;
-    }
-
-    public void setUsername(String username){
-        driver.findElement(By.id("user-name")).sendKeys(username);
-    }
-    public void setPassword(String password) {
-        driver.findElement(By.id("password")).sendKeys(password);
-    }
-    public void clickLoginBtn() {
-        driver.findElement(By.id("login-button")).click();
+    /* public static String detectLogin(int row){
+         String newXpath = String.format(userLoginsList, row);
+         Label logins = new Label(By.xpath(newXpath));
+         return logins.getWebElement().getText();
+     } */
+    public static void userLogin(String username, String password) {
+        userField.setValue(username);
+        passwordField.setValue(password);
+        loginBtn.click();
     }
 }

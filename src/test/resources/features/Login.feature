@@ -7,5 +7,8 @@ Feature: Login
 
   @Test
     Scenario: Login into application
-      When user logs in as standard_user with password secret_sauce
+      When user is on login page
+      Then user puts username standard_user into username field
+      Then user puts password secret_sauce into password field
+      Then user clicks login button
       Then user successfully logged in

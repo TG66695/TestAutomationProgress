@@ -4,29 +4,48 @@ import constants.PropertyConfigs;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class WebDriverUtil {
-    public static final ThreadLocal<WebDriver> drivers = ThreadLocal.withInitial(() -> null);
+    private static WebDriver driver;
 
-    public static WebDriver getDriver(){
-        return drivers.get();
-    }
-    public static void setDriver(WebDriver driver){
-        drivers.set(driver);
-    }
-    public static void closeDriverSession(){
-        drivers.get().quit();
-        drivers.set(null);
-    }
-    public static void closeDriverSessionIfExists() {
-        if (drivers.get() != null) {
-            closeDriverSession();
+    public static WebDriver getDriver() {
+        if (driver == null) {
+            initializeDriver();
         }
+        return driver;
     }
+
+    private static void initializeDriver() {
+        driver = WebDriverSetup.setupWebDriver();
+        driver.navigate().to(PropertyConfigs.APP_URL);
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(PropertyConfigs.SELENIUM_IMPLICIT_WAIT));
+    }
+
     public static WebElement getElement(By locator) {
-        AwaitUtils.waitUntil(() -> getDriver().findElements(locator).size() > 0, PropertyConfigs.SELENIUM_IMPLICIT_WAIT);
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(PropertyConfigs.SELENIUM_IMPLICIT_WAIT));
+        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         return getDriver().findElement(locator);
     }
 
+    public static String getValue(WebElement element) {
+        return element.getText().trim();
+    }
 
+    public static Integer getIntValue(WebElement element) {
+        try {
+            return Integer.parseInt(element.getText());
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static void click(WebElement element) {
+        element.click();
+    }
 }
