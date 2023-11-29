@@ -19,7 +19,7 @@ public class AwaitUtils {
         }
     }
 
-    public static boolean waitForConditionWithFluentWait(Callable<Boolean> condition, int timeout) {
+    public static boolean waitForConditionWithFluentWait(String message, Callable<Boolean> condition, int timeout) {
         try {
             Wait<WebDriver> wait = new FluentWait<>(WebDriverUtil.getDriver())
                     .withTimeout(Duration.ofSeconds(timeout))

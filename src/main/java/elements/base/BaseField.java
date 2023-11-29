@@ -5,8 +5,11 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import utils.WebDriverUtil;
 
+import java.util.ArrayList;
+import java.util.List;
+
 abstract public class BaseField {
-    private final By locator;
+    public final By locator;
 
     public BaseField(By locator) {
         this.locator = locator;
@@ -42,4 +45,5 @@ abstract public class BaseField {
             return false;
         }
     }
+
 }

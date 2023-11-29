@@ -3,6 +3,7 @@ package steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.commons.logging.Log;
 import org.junit.Assert;
 import pages.LoginPage;
 import pages.ProductsPage;
@@ -15,29 +16,29 @@ public class LoginSteps {
     }
 
     @When("user puts username {} into username field")
-    public void userPutsLogin(String user) {
-        Assert.assertTrue(LoginPage.userField.isDisplayed());
-        LoginPage.userField.setValue(user);
+    public void userPutsLogin(Integer row) {
+        Assert.assertTrue("User field is not displayed", LoginPage.userField.isDisplayed());
+        LoginPage.userField.setValue(LoginPage.detectLogin(row));
 //        String loginFromList = LoginPage.detectLogin(row);
 //        LoginPage.userField.setValue(loginFromList);
     }
 
     @Then("user puts password {} into password field")
     public void userPutsPassword(String password) {
-        Assert.assertTrue(LoginPage.passwordField.isDisplayed());
+        Assert.assertTrue("Password field is not displayed", LoginPage.passwordField.isDisplayed());
         LoginPage.passwordField.setValue(password);
-        AwaitUtils.waitForSeconds(2);
+//        AwaitUtils.waitForSeconds(2);
     }
 
     @Then("user clicks login button")
     public void userClicksLoginButton() {
-        Assert.assertTrue(LoginPage.loginBtn.isDisplayed());
+        Assert.assertTrue("Login button is not displayed",LoginPage.loginBtn.isDisplayed());
         LoginPage.loginBtn.click();
     }
 
     @Then("user successfully logged in")
     public void userSuccessfullyLoggedIn() {
-        Assert.assertTrue(ProductsPage.productsList.isDisplayed());
+        Assert.assertTrue("List of products is not displayed", ProductsPage.productsList.isDisplayed());
     }
 
     @Given("user logged into system as {} with password {}")
