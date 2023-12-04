@@ -13,10 +13,8 @@ public class Hook {
 
     @After
     public void driverTearDown(){
-        if(WebDriverUtil.getDriver()!= null){
-            WebDriverUtil.closeDriverSession();
+        WebDriverUtil.closeDriverSession();
+//        if(WebDriverUtil.getDriver()!= null){
+//            WebDriverUtil.closeDriverSession();
         }
     }
-
-
-}

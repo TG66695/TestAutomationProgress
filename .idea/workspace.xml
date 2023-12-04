@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9be299c-2de5-43c2-9e95-d9acf3417599" name="Changes" comment="v0.3">
+    <list default="true" id="a9be299c-2de5-43c2-9e95-d9acf3417599" name="Changes" comment="v0.4 small_fixes +loginSelection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/constants/PropertyConfigs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constants/PropertyConfigs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/elements/Label.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/Label.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/elements/base/BaseField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/base/BaseField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/AwaitUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/AwaitUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hook/Hook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hook/Hook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/CartSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/CartSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ProductPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ProductPageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -225,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700167003770</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="v0.4 small_fixes +loginSelection">
+      <created>1701274775340</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701274775340</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -234,17 +231,7 @@
     <MESSAGE value="v0.1" />
     <MESSAGE value="v0.2" />
     <MESSAGE value="v0.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/steps/LoginSteps.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="v0.4 small_fixes +loginSelection" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.4 small_fixes +loginSelection" />
   </component>
 </project>
