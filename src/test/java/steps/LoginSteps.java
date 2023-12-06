@@ -3,11 +3,9 @@ package steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.commons.logging.Log;
 import org.junit.Assert;
 import pages.LoginPage;
 import pages.ProductsPage;
-import utils.AwaitUtils;
 
 
 public class LoginSteps {
@@ -19,8 +17,6 @@ public class LoginSteps {
     public void userPutsLogin(Integer row) {
         Assert.assertTrue("User field is not displayed", LoginPage.userField.isDisplayed());
         LoginPage.userField.setValue(LoginPage.detectLogin(row));
-//        String loginFromList = LoginPage.detectLogin(row);
-//        LoginPage.userField.setValue(loginFromList);
     }
 
     @Then("user puts password {} into password field")

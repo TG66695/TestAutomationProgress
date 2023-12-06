@@ -19,11 +19,11 @@ public class CartSteps {
         Assert.assertTrue("Cart label is not displayed", CartPage.yourCartLabel.isDisplayed());
     }
 
-    @Then("user validates added item description")
-    public void userValidatesAddedItemDescription() {
+    @Then("user validates added item {} description")
+    public void userValidatesAddedItemDescription(Integer number) {
         Assert.assertTrue("Cart item is not displayed", CartPage.cartItem.isDisplayed());
-//        String productTitle = ProductsPage.firstProductTitle.getValue();
-//        String cartItemTitle = CartPage.cartItem.getWebElement().getText();
-        Assert.assertEquals(ProductsPage.firstProductTitle.getValue(), CartPage.cartItem.getWebElement().getText());
+//        String productTitleOnProductPage = ProductsPage.getItemTitleOnProductPage(number);
+//        String cartElemTitle = CartPage.getCartItemTitle(number);
+//        Assert.assertEquals("Values are not equal",productTitleOnProductPage, cartElemTitle);
     }
 }

@@ -48,8 +48,4 @@ public class WebDriverUtil {
     public static void click(WebElement element) {
         element.click();
     }
-
-    public static void closeDriverSession(){
-        getDriver().quit();
-    }
 }
