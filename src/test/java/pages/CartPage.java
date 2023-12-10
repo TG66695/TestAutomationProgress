@@ -14,6 +14,4 @@ public class CartPage {
         TextBox cartTitle = new TextBox(By.xpath(String.format(cartItemTitle, number)));
         return cartTitle.getValue();
     }
-
-
 }

@@ -12,4 +12,4 @@ Feature: Cart validation
     Then product is added to the cart
     Then user clicks on cart button
     And user is in the cart
-    Then user validates added item 2 description
+    Then user validates added item 1st in the list description

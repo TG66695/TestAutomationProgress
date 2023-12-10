@@ -15,12 +15,12 @@ public class ProductsPage {
     public static String ProductTitle = "//div[@class ='inventory_item'][%s]//div[@class ='inventory_item_name ']";
 
 
-    public static void clickAddToCartButton(Integer num){
+    public static void clickAddToCartButton(Integer num) {
         Button addBtn = new Button(By.xpath(String.format(addToCartBtn, num)));
         addBtn.click();
     }
 
-    public static String getItemTitleOnProductPage(Integer number){
+    public static String getItemTitleOnProductPage(Integer number) {
         TextBox text = new TextBox(By.xpath(String.format(ProductTitle, number)));
         return text.getValue();
     }

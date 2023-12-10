@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9be299c-2de5-43c2-9e95-d9acf3417599" name="Changes" comment="v0.5 loginSelectionFix">
+    <list default="true" id="a9be299c-2de5-43c2-9e95-d9acf3417599" name="Changes" comment="v0.6 productSelection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hook/Hook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hook/Hook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/WebDriverUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/WebDriverUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/context/TestContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/context/TestContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestSuite.bat" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuite.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/CartSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/CartSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/ProductPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ProductPageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddProductToCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AddProductToCart.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/CartValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CartValidation.feature" afterDir="false" />
@@ -57,7 +56,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/MyFolder/Test_automation_projects/tch-ui-tests/pom.xml&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/MyFolder/Test_automation_projects/TestAutomationProgress/pom.xml&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/MyFolder/Test_automation_projects/TestAutomationProgress/src/main/java/org/example/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
@@ -236,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701702407786</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="v0.6 productSelection">
+      <created>1701858856959</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701858856959</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -247,6 +253,7 @@
     <MESSAGE value="v0.3" />
     <MESSAGE value="v0.4 small_fixes +loginSelection" />
     <MESSAGE value="v0.5 loginSelectionFix" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.5 loginSelectionFix" />
+    <MESSAGE value="v0.6 productSelection" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.6 productSelection" />
   </component>
 </project>

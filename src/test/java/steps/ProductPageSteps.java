@@ -1,5 +1,6 @@
 package steps;
 
+import fileReadWrite.FileReaderWriter;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -12,15 +13,20 @@ public class ProductPageSteps {
         ProductsPage.clickAddToCartButton(num);
     }
 
+    @And("user saves title for {} product")
+    public void userSavesTheTitle(Integer number) {
+        FileReaderWriter.saveTitleToFile(number);
+    }
+
     @Then("product is added to the cart")
     public void productIsInTheCart() {
         int badgeValue = ProductsPage.cartBadge.getIntValue();
-        Assert.assertEquals("Card badge doesn't have expected value",1  , badgeValue);
+        Assert.assertEquals("Card badge doesn't have expected value", 1, badgeValue);
     }
 
     @And("Remove button appears")
     public void removeButtonAppears() {
-        Assert.assertTrue("Remove button is not displayed",ProductsPage.removeBtn.isDisplayed());
+        Assert.assertTrue("Remove button is not displayed", ProductsPage.removeBtn.isDisplayed());
     }
 
 }
