@@ -28,7 +28,7 @@ public class LoginPage {
             }
         }
         if (row == 1) {
-            List<String> firstLog = List.of(result.get(row - 1).split(valToSplit2));
+            List<String> firstLog = List.of(result.get(0).split(valToSplit2));
             return firstLog.get(row);
         } else {
             return result.get(row - 1);

@@ -5,9 +5,6 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import utils.WebDriverUtil;
 
-import java.util.ArrayList;
-import java.util.List;
-
 abstract public class BaseField {
     public final By locator;
 

@@ -23,12 +23,11 @@ public class LoginSteps {
     public void userPutsPassword(String password) {
         Assert.assertTrue("Password field is not displayed", LoginPage.passwordField.isDisplayed());
         LoginPage.passwordField.setValue(password);
-//        AwaitUtils.waitForSeconds(2);
     }
 
     @Then("user clicks login button")
     public void userClicksLoginButton() {
-        Assert.assertTrue("Login button is not displayed",LoginPage.loginBtn.isDisplayed());
+        Assert.assertTrue("Login button is not displayed", LoginPage.loginBtn.isDisplayed());
         LoginPage.loginBtn.click();
     }
 

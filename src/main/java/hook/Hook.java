@@ -2,18 +2,17 @@ package hook;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import utils.WebDriverUtil;
 
-import static utils.WebDriverUtil.getDriver;
 
 public class Hook {
     @Before
-
     public static void driverSetup() {
-        getDriver();
+        WebDriverUtil.getDriver();
     }
 
     @After
-    public void driverTearDown(){
-        getDriver().quit();
-        }
+    public void driverTearDown() {
+        WebDriverUtil.getDriver().quit();
     }
+}
