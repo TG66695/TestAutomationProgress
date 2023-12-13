@@ -12,6 +12,7 @@ public class LoginPage {
     public static final TextBox userField = new TextBox(By.id("user-name"));
     public static final TextBox passwordField = new TextBox(By.id("password"));
     public static final Button loginBtn = new Button(By.id("login-button"));
+    public static final TextBox lockedUserMsg = new TextBox(By.xpath("//h3"));
     public static String userLoginsList = "//div[@class = 'login_credentials']";
 
     public static String detectLogin(int row) {
