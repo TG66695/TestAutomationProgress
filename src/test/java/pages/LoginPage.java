@@ -4,6 +4,8 @@ import elements.Button;
 import elements.Label;
 import elements.TextBox;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import utils.WebDriverUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,13 +15,12 @@ public class LoginPage {
     public static final TextBox passwordField = new TextBox(By.id("password"));
     public static final Button loginBtn = new Button(By.id("login-button"));
     public static final TextBox lockedUserMsg = new TextBox(By.xpath("//div[@class = 'error-message-container error']/h3"));
-    public static String userLoginsList = "//div[@class = 'login_credentials']";
+    public static final TextBox userLoginsList = new TextBox(By.xpath("//div[@class = 'login_credentials']"));
 
     public static String detectLogin(int row) {
-        Label log = new Label(By.xpath(userLoginsList));
         String valToSplit = "_user";
         String valToSplit2 = "Accepted usernames are:";
-        List<String> logsList = new ArrayList<>(List.of(log.getValue().split(valToSplit)));
+        List<String> logsList = new ArrayList<>(List.of(userLoginsList.getValue().split(valToSplit)));
         List<String> result = new ArrayList<>();
         for (int i = 0; i < logsList.size(); i++) {
             if (row < logsList.size() && row > 0) {
@@ -35,6 +36,7 @@ public class LoginPage {
             return result.get(row - 1);
         }
     }
+
 
     public static void userLogin(String username, String password) {
         userField.setValue(username);

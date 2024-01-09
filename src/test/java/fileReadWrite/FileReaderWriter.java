@@ -29,7 +29,6 @@ public class FileReaderWriter {
 
     public static String readFromFile(String fileName) {
         StringBuilder content = new StringBuilder();
-
         try {
             FileReader fileReader = new FileReader(fileName);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
@@ -38,6 +37,9 @@ public class FileReaderWriter {
                 content.append(line);
             }
             bufferedReader.close();
+            if (content.length() == 0){
+                System.out.println("File is empty");
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
