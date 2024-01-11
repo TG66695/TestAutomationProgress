@@ -1,2 +1,2 @@
-call mvn clean verify -Dcucumber.options="--tags @AddToCart"
+call mvn clean verify -Dcucumber.filter.tags="@AddToCart"
 pause

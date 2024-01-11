@@ -7,9 +7,5 @@ public class WebDriverSetup {
 
     public static WebDriver setupWebDriver() {
         return new ChromeDriver();
-
-//        return WebDriverManager
-//                .chromedriver()
-//                .create();
     }
 }

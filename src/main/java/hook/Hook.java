@@ -14,5 +14,6 @@ public class Hook {
     @After
     public void driverTearDown() {
         WebDriverUtil.getDriver().quit();
+        WebDriverUtil.setDriver(null);
     }
 }

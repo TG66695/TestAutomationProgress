@@ -37,7 +37,7 @@ public class FileReaderWriter {
                 content.append(line);
             }
             bufferedReader.close();
-            if (content.length() == 0){
+            if (content.length() == 0) {
                 System.out.println("File is empty");
             }
         } catch (IOException e) {

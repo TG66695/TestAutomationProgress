@@ -1,11 +1,8 @@
 package pages;
 
 import elements.Button;
-import elements.Label;
 import elements.TextBox;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import utils.WebDriverUtil;
 
 import java.util.ArrayList;
 import java.util.List;

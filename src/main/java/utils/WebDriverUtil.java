@@ -19,9 +19,12 @@ public class WebDriverUtil {
         return driver;
     }
 
+    public static void setDriver(WebDriver newDriver) {
+        driver = newDriver;
+    }
+
     private static void initializeDriver() {
         driver = WebDriverSetup.setupWebDriver();
-        driver.navigate().to(PropertyConfigs.APP_URL);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(PropertyConfigs.SELENIUM_IMPLICIT_WAIT));
     }

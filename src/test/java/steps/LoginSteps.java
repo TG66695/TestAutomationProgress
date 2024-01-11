@@ -1,26 +1,34 @@
 package steps;
 
+import constants.PropertyConfigs;
+import converter.StringToIntConverter;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.commons.logging.Log;
 import org.junit.Assert;
 import pages.LoginPage;
 import pages.ProductsPage;
+import utils.AwaitUtils;
 import utils.WebDriverUtil;
 
 
 public class LoginSteps {
+    @Given("user opens webpage")
+    public void userOpensWebpage() {
+        WebDriverUtil.getDriver().navigate().to(PropertyConfigs.APP_URL);
+    }
     @When("user is on login page")
     public void userIsOnLoginPage() {
-        String URL = WebDriverUtil.getDriver().getCurrentUrl();
-        Assert.assertEquals("User is not on Login page", "https://www.saucedemo.com/", URL);
+        Assert.assertTrue("User field is not displayed", LoginPage.userField.isDisplayed());
+        Assert.assertTrue("Password field is not displayed", LoginPage.passwordField.isDisplayed());
+        Assert.assertTrue("Login button is not displayed", LoginPage.loginBtn.isDisplayed());
     }
 
-    @When("user puts username {} into username field")
-    public void userPutsLogin(Integer row) {
+    @When("user puts {} username from usernames list into username field")
+    public void userPutsLogin(String row) {
         Assert.assertTrue("User field is not displayed", LoginPage.userField.isDisplayed());
-        LoginPage.userField.setValue(LoginPage.detectLogin(row));
+        int line = StringToIntConverter.getIntFromString(row);
+        LoginPage.userField.setValue(LoginPage.detectLogin(line));
     }
 
     @Then("user puts password {} into password field")
@@ -50,4 +58,6 @@ public class LoginSteps {
         String errorMsg = LoginPage.lockedUserMsg.getValue();
         Assert.assertEquals("Messages are not equal", "Epic sadface: Sorry, this user has been locked out.", errorMsg);
     }
+
+
 }

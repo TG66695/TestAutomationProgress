@@ -4,13 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9be299c-2de5-43c2-9e95-d9acf3417599" name="Changes" comment="v0.9 smallFix">
+    <list default="true" id="a9be299c-2de5-43c2-9e95-d9acf3417599" name="Changes" comment="v0.10 smallFix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Add_to_cart.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Add_to_cart.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cart_validation.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Cart_validation.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Run_login.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Run_login.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hook/Hook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hook/Hook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/WebDriverSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/WebDriverSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/WebDriverUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/WebDriverUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/fileReadWrite/FileReaderWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fileReadWrite/FileReaderWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/CartSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/CartSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/title.txt" beforeDir="false" afterPath="$PROJECT_DIR$/title.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ProductPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ProductPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddProductToCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AddProductToCart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/CartValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CartValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/title.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +63,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/MyFolder/Test_automation_projects/TestAutomationProgress/pom.xml",
+    "last_opened_file_path": "C:/MyFolder/Test_automation_projects/careerpath-ui-tests/pom.xml",
     "onboarding.tips.debug.path": "C:/MyFolder/Test_automation_projects/TestAutomationProgress/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
@@ -68,7 +79,7 @@
       <recent name="steps" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: item validation">
+  <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="Scenario: Login into application" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
@@ -166,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Cucumber Java.Scenario: item validation" />
         <item itemvalue="Cucumber Java.Scenario: User adds product to cart" />
-        <item itemvalue="Cucumber Java.Scenario: Login into application" />
         <item itemvalue="Cucumber Java.Scenario: Try login into application as locked user" />
-        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Login into application" />
       </list>
     </recent_temporary>
   </component>
@@ -267,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702462280895</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="v0.10 smallFix">
+      <created>1704789018526</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1704789018526</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -283,6 +301,7 @@
     <MESSAGE value="v0.8" />
     <MESSAGE value="v0.9 loginSteps fixes + lockedUser test" />
     <MESSAGE value="v0.9 smallFix" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.9 smallFix" />
+    <MESSAGE value="v0.10 smallFix" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.10 smallFix" />
   </component>
 </project>

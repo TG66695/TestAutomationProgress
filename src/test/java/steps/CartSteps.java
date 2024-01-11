@@ -1,5 +1,6 @@
 package steps;
 
+import converter.StringToIntConverter;
 import fileReadWrite.FileReaderWriter;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -20,11 +21,12 @@ public class CartSteps {
         Assert.assertTrue("Cart label is not displayed", CartPage.yourCartLabel.isDisplayed());
     }
 
-    @Then("user validates added item {}st in the list description")
-    public void userValidatesAddedItemDescription(Integer number) {
+    @Then("user validates added item {} in the list description")
+    public void userValidatesAddedItemDescription(String number) {
         Assert.assertTrue("Cart item is not displayed", CartPage.cartItem.isDisplayed());
+        int line = StringToIntConverter.getIntFromString(number);
         String productTitle = FileReaderWriter.readTitleFromFile();
-        String cartElemTitle = CartPage.getCartItemTitle(number);
+        String cartElemTitle = CartPage.getCartItemTitle(line);
         Assert.assertEquals("Values are not equal", productTitle, cartElemTitle);
         FileReaderWriter.clearFile("title.txt");
     }
