@@ -1,15 +1,15 @@
 package steps;
 
 import converter.StringToIntConverter;
-import fileReadWrite.FileReaderWriter;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import pages.ProductsPage;
-import utils.AwaitUtils;
 
 public class ProductPageSteps {
+    public static String controlTitle = null;
+
     @When("user clicks \"Add to cart\" button for {} product")
     public void userClicksAddButton(String num) {
         int line = StringToIntConverter.getIntFromString(num);
@@ -19,7 +19,7 @@ public class ProductPageSteps {
     @And("user saves title for {} product")
     public void userSavesTheTitle(String number) {
         int line = StringToIntConverter.getIntFromString(number);
-        FileReaderWriter.saveTitleToFile(line);
+        controlTitle = ProductsPage.getItemTitleOnProductPage(line);
     }
 
     @Then("One product is added to the cart")

@@ -8,7 +8,6 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import pages.LoginPage;
 import pages.ProductsPage;
-import utils.AwaitUtils;
 import utils.WebDriverUtil;
 
 
@@ -17,6 +16,7 @@ public class LoginSteps {
     public void userOpensWebpage() {
         WebDriverUtil.getDriver().navigate().to(PropertyConfigs.APP_URL);
     }
+
     @When("user is on login page")
     public void userIsOnLoginPage() {
         Assert.assertTrue("User field is not displayed", LoginPage.userField.isDisplayed());

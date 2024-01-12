@@ -1,7 +1,6 @@
 package steps;
 
 import converter.StringToIntConverter;
-import fileReadWrite.FileReaderWriter;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -25,9 +24,8 @@ public class CartSteps {
     public void userValidatesAddedItemDescription(String number) {
         Assert.assertTrue("Cart item is not displayed", CartPage.cartItem.isDisplayed());
         int line = StringToIntConverter.getIntFromString(number);
-        String productTitle = FileReaderWriter.readTitleFromFile();
+        String productTitle = ProductPageSteps.controlTitle;
         String cartElemTitle = CartPage.getCartItemTitle(line);
         Assert.assertEquals("Values are not equal", productTitle, cartElemTitle);
-        FileReaderWriter.clearFile("title.txt");
     }
 }
