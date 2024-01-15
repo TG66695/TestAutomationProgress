@@ -28,6 +28,7 @@ public class WebDriverUtil {
         driver = WebDriverSetup.setupWebDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(PropertyConfigs.SELENIUM_IMPLICIT_WAIT));
+        driver.manage().deleteAllCookies();
     }
 
     public static WebElement getElement(By locator) {
