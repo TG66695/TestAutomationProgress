@@ -24,7 +24,7 @@ public class CartSteps {
     public void userValidatesAddedItemDescription(String number) {
         Assert.assertTrue("Cart item is not displayed", CartPage.cartItem.isDisplayed());
         int line = StringToIntConverter.getIntFromString(number);
-        String productTitle = ProductPageSteps.controlTitle;
+        String productTitle = ProductPageSteps.controlTitle.get(line - 1);
         String cartElemTitle = CartPage.getCartItemTitle(line);
         Assert.assertEquals("Values are not equal", productTitle, cartElemTitle);
     }

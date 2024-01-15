@@ -5,6 +5,9 @@ import elements.Form;
 import elements.Label;
 import elements.TextBox;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class ProductsPage {
     public static String addToCartBtn = "//div[@class = 'inventory_item'][%s]//button";
@@ -23,5 +26,10 @@ public class ProductsPage {
     public static String getItemTitleOnProductPage(Integer number) {
         TextBox text = new TextBox(By.xpath(String.format(ProductTitle, number)));
         return text.getValue();
+    }
+
+    public static Integer findAmountOfRemoveButtons() {
+        List<WebElement> elemsList = removeBtn.getWebElements();
+        return elemsList.size();
     }
 }

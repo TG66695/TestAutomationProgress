@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class WebDriverUtil {
     private static WebDriver driver;
@@ -35,6 +36,12 @@ public class WebDriverUtil {
         return getDriver().findElement(locator);
     }
 
+    public static List<WebElement> getElements(By locator) {
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(PropertyConfigs.SELENIUM_IMPLICIT_WAIT));
+        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        return getDriver().findElements(locator);
+    }
+
     public static String getValue(WebElement element) {
         return element.getText().trim();
     }
@@ -51,4 +58,5 @@ public class WebDriverUtil {
     public static void click(WebElement element) {
         element.click();
     }
+
 }

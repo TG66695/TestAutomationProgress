@@ -5,6 +5,8 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import utils.WebDriverUtil;
 
+import java.util.List;
+
 abstract public class BaseField {
     public final By locator;
 
@@ -14,6 +16,10 @@ abstract public class BaseField {
 
     public WebElement getWebElement() {
         return WebDriverUtil.getElement(locator);
+    }
+
+    public List<WebElement> getWebElements() {
+        return WebDriverUtil.getElements(locator);
     }
 
     public void setValue(String value) {
