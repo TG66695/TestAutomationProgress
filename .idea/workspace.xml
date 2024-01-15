@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9be299c-2de5-43c2-9e95-d9acf3417599" name="Changes" comment="v0.12 variable instead of FileReader for productTitle">
+    <list default="true" id="a9be299c-2de5-43c2-9e95-d9acf3417599" name="Changes" comment="v0.13 extra TestCases, few items addition">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/elements/base/BaseField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/base/BaseField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/WebDriverUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/WebDriverUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/CartSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/CartSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/ProductPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ProductPageSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddProductToCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AddProductToCart.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/CartValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CartValidation.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/title.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,23 +40,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/MyFolder/Test_automation_projects/tch-ui-tests/pom.xml",
-    "onboarding.tips.debug.path": "C:/MyFolder/Test_automation_projects/TestAutomationProgress/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.26551723",
-    "settings.editor.selected.configurable": "fileTemplates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/MyFolder/Test_automation_projects/tch-ui-tests/pom.xml&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/MyFolder/Test_automation_projects/TestAutomationProgress/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.26551723&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\MyFolder\Test_automation_projects\TestAutomationProgress\src\test" />
@@ -71,16 +65,15 @@
       <recent name="steps" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: One item addition into cart validation">
-    <configuration name="Scenario: One item addition into cart validation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Few items addition into cart validation">
+    <configuration name="Feature: CartValidation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/CartValidation.feature" />
       <option name="GLUE" value="hook steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="TestAutomationProgress" />
-      <option name="NAME_FILTER" value="^One item addition into cart validation$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^One item addition into cart validation$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: One item addition into cart validation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: CartValidation" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -92,15 +85,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User adds product to cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Few items addition into cart validation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AddProductToCart.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/CartValidation.feature" />
       <option name="GLUE" value="hook steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="TestAutomationProgress" />
-      <option name="NAME_FILTER" value="^User adds product to cart$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User adds product to cart$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User adds product to cart" />
+      <option name="NAME_FILTER" value="^Few items addition into cart validation$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Few items addition into cart validation$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Few items addition into cart validation" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: One item addition into cart validation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/CartValidation.feature" />
+      <option name="GLUE" value="hook steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TestAutomationProgress" />
+      <option name="NAME_FILTER" value="^One item addition into cart validation$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^One item addition into cart validation$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: One item addition into cart validation" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -152,28 +165,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestAutomationProgress" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="runners.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="runners" />
-      <option name="MAIN_CLASS_NAME" value="runners.TestRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Few items addition into cart validation" />
+        <item itemvalue="Cucumber Java.Feature: CartValidation" />
         <item itemvalue="Cucumber Java.Scenario: One item addition into cart validation" />
         <item itemvalue="Cucumber Java.Scenario: item validation" />
         <item itemvalue="Cucumber Java.Scenario: User adds two products into cart" />
-        <item itemvalue="Cucumber Java.Scenario: User adds product to cart" />
-        <item itemvalue="JUnit.TestRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705071158098</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="v0.13 extra TestCases, few items addition">
+      <created>1705328842919</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1705328842919</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -310,6 +315,7 @@
     <MESSAGE value="v0.10 smallFix" />
     <MESSAGE value="v0.11 smallFixes + TestRunner + BatFiles + CorrectionOfWebDriver + StringToIntConverter" />
     <MESSAGE value="v0.12 variable instead of FileReader for productTitle" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.12 variable instead of FileReader for productTitle" />
+    <MESSAGE value="v0.13 extra TestCases, few items addition" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.13 extra TestCases, few items addition" />
   </component>
 </project>

@@ -38,4 +38,8 @@ public class ProductPageSteps {
         Assert.assertEquals("Amount is different", amount, amountOfRemoveButtons);
     }
 
+    @And("user clears controlTitle")
+    public void userClearsControlTitle() {
+        controlTitle.clear();
+    }
 }

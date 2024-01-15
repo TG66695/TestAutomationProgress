@@ -15,6 +15,7 @@ Feature: Cart validation
     Then user clicks on cart button
     And user is in the cart
     Then user validates added item first in the list description
+    And user clears controlTitle
 
   @Test
   Scenario: Few items addition into cart validation
@@ -24,8 +25,12 @@ Feature: Cart validation
     And user saves title for first product
     Then user clicks "Add to cart" button for third product
     And user saves title for third product
-    Then 2 product added to the cart
+    Then user clicks "Add to cart" button for fourth product
+    And user saves title for fourth product
+    Then 3 product added to the cart
     Then user clicks on cart button
     And user is in the cart
     Then user validates added item first in the list description
     Then user validates added item second in the list description
+    Then user validates added item third in the list description
+    And user clears controlTitle
