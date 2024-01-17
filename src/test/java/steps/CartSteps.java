@@ -28,4 +28,5 @@ public class CartSteps {
         String cartElemTitle = CartPage.getCartItemTitle(line);
         Assert.assertEquals("Values are not equal", productTitle, cartElemTitle);
     }
+
 }

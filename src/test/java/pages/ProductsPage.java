@@ -1,9 +1,6 @@
 package pages;
 
-import elements.Button;
-import elements.Form;
-import elements.Label;
-import elements.TextBox;
+import elements.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -16,6 +13,8 @@ public class ProductsPage {
     public static final Label cartBadge = new Label(By.xpath("//span[@class = 'shopping_cart_badge']"));
     public static final Button removeBtn = new Button(By.xpath("//button[contains(text(), 'Remove')]"));
     public static String ProductTitle = "//div[@class ='inventory_item'][%s]//div[@class ='inventory_item_name ']";
+    public static final SideMenu burgerMenuBtn = new SideMenu(By.xpath("//button[@id = 'react-burger-menu-btn']"));
+    public static final Form sortMenu = new Form(By.xpath("//select[@class = 'product_sort_container']"));
 
 
     public static void clickAddToCartButton(Integer num) {

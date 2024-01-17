@@ -9,9 +9,14 @@ import java.util.List;
 
 abstract public class BaseField {
     public final By locator;
+    public final BaseField parent;
+    public BaseField(By locator){
+        this(null, locator);
+    }
 
-    public BaseField(By locator) {
+    public BaseField(BaseField parent, By locator) {
         this.locator = locator;
+        this.parent = parent;
     }
 
     public WebElement getWebElement() {
