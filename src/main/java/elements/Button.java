@@ -1,6 +1,5 @@
 package elements;
 
-import com.fasterxml.jackson.databind.ser.Serializers;
 import elements.base.BaseField;
 import org.openqa.selenium.By;
 

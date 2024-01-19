@@ -10,7 +10,8 @@ import java.util.List;
 abstract public class BaseField {
     public final By locator;
     public final BaseField parent;
-    public BaseField(By locator){
+
+    public BaseField(By locator) {
         this(null, locator);
     }
 

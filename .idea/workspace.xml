@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9be299c-2de5-43c2-9e95-d9acf3417599" name="Changes" comment="v0.15 small fixes">
+    <list default="true" id="a9be299c-2de5-43c2-9e95-d9acf3417599" name="Changes" comment="v0.16 new page added + BaseField changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/elements/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/elements/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/Form.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/elements/Label.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/Label.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/elements/TextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/TextBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/elements/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/Link.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/elements/base/BaseField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/base/BaseField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/converter/StringToIntConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/converter/StringToIntConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/CartSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/CartSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CheckoutPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/MyFolder/Test_automation_projects/tch-ui-tests/pom.xml&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/MyFolder/Test_automation_projects/TestAutomationProgress/pom.xml&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/MyFolder/Test_automation_projects/TestAutomationProgress/src/main/java/org/example/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
@@ -71,15 +70,16 @@
       <recent name="steps" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
-    <configuration name="Feature: CartValidation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Add product to the cart and proceed with checkout process">
+    <configuration name="Scenario: Add product to the cart and proceed with checkout process" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/CartValidation.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Checkout.feature" />
       <option name="GLUE" value="hook steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="TestAutomationProgress" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: CartValidation" />
+      <option name="NAME_FILTER" value="^Add product to the cart and proceed with checkout process$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Add product to the cart and proceed with checkout process$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Add product to the cart and proceed with checkout process" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -168,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Add product to the cart and proceed with checkout process" />
         <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Cucumber Java.Scenario: One item addition into cart validation" />
         <item itemvalue="Cucumber Java.Scenario: Few items addition into cart validation" />
         <item itemvalue="Cucumber Java.Scenario: User adds product to cart" />
-        <item itemvalue="Cucumber Java.Feature: CartValidation" />
       </list>
     </recent_temporary>
   </component>
@@ -311,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705334284174</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="v0.16 new page added + BaseField changes">
+      <created>1705510681004</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1705510681004</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -333,6 +340,7 @@
     <MESSAGE value="v0.13 extra TestCases, few items addition" />
     <MESSAGE value="v0.14 small fixes" />
     <MESSAGE value="v0.15 small fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.15 small fixes" />
+    <MESSAGE value="v0.16 new page added + BaseField changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.16 new page added + BaseField changes" />
   </component>
 </project>

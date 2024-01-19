@@ -2,8 +2,8 @@ package converter;
 
 public class StringToIntConverter {
 
-    public static Integer getIntFromString(String value){
-        return switch (value){
+    public static Integer getIntFromString(String value) {
+        return switch (value) {
             case "first" -> 1;
             case "second" -> 2;
             case "third" -> 3;
